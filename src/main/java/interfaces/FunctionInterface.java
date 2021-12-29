@@ -1,3 +1,5 @@
+package interfaces;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -14,7 +16,6 @@ public class FunctionInterface {
         };
         numberGenerator.accept(5);
 
-ыфв
         Supplier<String> dayOfWeekSupplier = () -> {
             Date date = new Date();
             SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE");
@@ -36,7 +37,7 @@ public class FunctionInterface {
             return b;
 
         };
-        System.out.println("число фибоначи (0,1,1,2,3,5,8,13,21,34,55....) = "+integerUnaryOperator.apply(5));
+        System.out.println("число фибоначи (0,1,1,2,3,5,8,13,21,34,55....) = "+integerUnaryOperator.apply(7));
     }
 }
 
