@@ -14,7 +14,7 @@ public class FunctionInterface {
         };
         numberGenerator.accept(5);
 
-
+ыфв
         Supplier<String> dayOfWeekSupplier = () -> {
             Date date = new Date();
             SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE");
