@@ -17,6 +17,6 @@ public class StreamApi {
                 new People("Анна", 25, Sex.WOMEN));
         System.out.println("служить пойдут -> " + peopleList.stream().filter(army -> (army.age > 18) && (army.age < 27)).toList());
         System.out.println("средний возраст-> " + peopleList.stream().filter(sex -> sex.sex.equals(Sex.MAN)).mapToInt(x -> x.age).average());
-        System.out.println("все кроме иваныча ->"+peopleList.stream().filter(workPeople -> ((workPeople.sex.equals(Sex.MAN) && (workPeople.age < 60))) || ((workPeople.sex.equals(Sex.WOMEN)) && (workPeople.age < 55))).toList());
+        System.out.println("все кроме Иваныча ->"+peopleList.stream().filter(workPeople -> ((workPeople.sex.equals(Sex.MAN) && (workPeople.age < 60))) || ((workPeople.sex.equals(Sex.WOMEN)) && (workPeople.age < 55))).toList());
     }
 }
