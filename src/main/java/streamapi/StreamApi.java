@@ -47,7 +47,7 @@ public class StreamApi {
                 CSVWriter writer = new CSVWriter(new FileWriter("C:\\Users\\Burning\\IdeaProjects\\NY\\src\\main\\java\\output\\result.csv"))) {
             writer.writeAll(list);
         }
-//Скачиваем картинку
+        //Скачиваем картинку
         String linkForIMG = "https://memepedia.ru/wp-content/uploads/2020/07/strimer-blekfejs-1.jpg";
         DirUtils.downloadImage(linkForIMG, rootPath + "\\output");
     }
